@@ -1,0 +1,331 @@
+{"root": {
+  "id": 0,
+  "type": "USER_SCRIPT",
+  "children": [ {
+      "id": 1,
+      "type": "STATEMENT_LIST",
+      "children": [ {
+          "id": 2,
+          "type": "STATEMENT",
+          "children": [ {
+              "id": 3,
+              "type": "FCN_DEF",
+              "children": [ {
+                  "id": 4,
+                  "type": "USER_FCN",
+                  "name": "gradientDescent",
+                  "children": [ {
+                      "id": 5,
+                      "type": "PARAM_LIST",
+                      "children": [ {
+                          "id": 6,
+                          "type": "DECL_ELT",
+                          "children": [ {
+                              "id": 7,
+                              "type": "IDENT",
+                              "name": "theta",
+                              "children": [],
+                              "annotations": []
+                            }],
+                          "annotations": []
+                        }, {
+                          "id": 8,
+                          "type": "DECL_ELT",
+                          "children": [ {
+                              "id": 9,
+                              "type": "IDENT",
+                              "name": "J_history",
+                              "children": [],
+                              "annotations": []
+                            }],
+                          "annotations": []
+                        }],
+                      "annotations": []
+                    }, {
+                      "id": 10,
+                      "type": "PARAM_LIST",
+                      "children": [ {
+                          "id": 11,
+                          "type": "DECL_ELT",
+                          "children": [ {
+                              "id": 12,
+                              "type": "IDENT",
+                              "name": "X",
+                              "children": [],
+                              "annotations": []
+                            }],
+                          "annotations": []
+                        }, {
+                          "id": 13,
+                          "type": "DECL_ELT",
+                          "children": [ {
+                              "id": 14,
+                              "type": "IDENT",
+                              "name": "y",
+                              "children": [],
+                              "annotations": []
+                            }],
+                          "annotations": []
+                        }, {
+                          "id": 15,
+                          "type": "DECL_ELT",
+                          "children": [ {
+                              "id": 16,
+                              "type": "IDENT",
+                              "name": "theta",
+                              "children": [],
+                              "annotations": []
+                            }],
+                          "annotations": []
+                        }, {
+                          "id": 17,
+                          "type": "DECL_ELT",
+                          "children": [ {
+                              "id": 18,
+                              "type": "IDENT",
+                              "name": "alpha",
+                              "children": [],
+                              "annotations": []
+                            }],
+                          "annotations": []
+                        }, {
+                          "id": 19,
+                          "type": "DECL_ELT",
+                          "children": [ {
+                              "id": 20,
+                              "type": "IDENT",
+                              "name": "num_iters",
+                              "children": [],
+                              "annotations": []
+                            }],
+                          "annotations": []
+                        }],
+                      "annotations": []
+                    }, {
+                      "id": 21,
+                      "type": "STATEMENT_LIST",
+                      "children": [ {
+                          "id": 22,
+                          "type": "STATEMENT",
+                          "children": [ {
+                              "id": 23,
+                              "type": "ASSIGN",
+                              "name": "=",
+                              "children": [ {
+                                  "id": 24,
+                                  "type": "IDENT",
+                                  "name": "m",
+                                  "children": [],
+                                  "annotations": []
+                                }, {
+                                  "id": 25,
+                                  "type": "INDEX_EXP",
+                                  "children": [ {
+                                      "id": 26,
+                                      "type": "IDENT",
+                                      "name": "length",
+                                      "children": [],
+                                      "annotations": []
+                                    }, {
+                                      "id": 27,
+                                      "type": "ARGUMENT_LIST",
+                                      "children": [ {
+                                          "id": 28,
+                                          "type": "IDENT",
+                                          "name": "y",
+                                          "children": [],
+                                          "annotations": []
+                                        }],
+                                      "annotations": []
+                                    }],
+                                  "annotations": []
+                                }],
+                              "annotations": []
+                            }],
+                          "annotations": []
+                        }, {
+                          "id": 29,
+                          "type": "STATEMENT",
+                          "children": [ {
+                              "id": 30,
+                              "type": "ASSIGN",
+                              "name": "=",
+                              "children": [ {
+                                  "id": 31,
+                                  "type": "IDENT",
+                                  "name": "J_history",
+                                  "children": [],
+                                  "annotations": []
+                                }, {
+                                  "id": 32,
+                                  "type": "INDEX_EXP",
+                                  "children": [ {
+                                      "id": 33,
+                                      "type": "IDENT",
+                                      "name": "zeros",
+                                      "children": [],
+                                      "annotations": []
+                                    }, {
+                                      "id": 34,
+                                      "type": "ARGUMENT_LIST",
+                                      "children": [ {
+                                          "id": 35,
+                                          "type": "IDENT",
+                                          "name": "num_iters",
+                                          "children": [],
+                                          "annotations": []
+                                        }, {
+                                          "id": 36,
+                                          "type": "CONST",
+                                          "name": " 1",
+                                          "children": [],
+                                          "annotations": []
+                                        }],
+                                      "annotations": []
+                                    }],
+                                  "annotations": []
+                                }],
+                              "annotations": []
+                            }],
+                          "annotations": []
+                        }, {
+                          "id": 37,
+                          "type": "STATEMENT",
+                          "children": [ {
+                              "id": 38,
+                              "type": "SIMPLE_FOR",
+                              "name": "for",
+                              "children": [ {
+                                  "id": 39,
+                                  "type": "IDENT",
+                                  "name": "iter",
+                                  "children": [],
+                                  "annotations": []
+                                }, {
+                                  "id": 40,
+                                  "type": "COLON",
+                                  "children": [ {
+                                      "id": 41,
+                                      "type": "CONST",
+                                      "name": " 1",
+                                      "children": [],
+                                      "annotations": []
+                                    }, {
+                                      "id": 42,
+                                      "type": "IDENT",
+                                      "name": "num_iters",
+                                      "children": [],
+                                      "annotations": []
+                                    }],
+                                  "annotations": []
+                                }, {
+                                  "id": 43,
+                                  "type": "STATEMENT_LIST",
+                                  "children": [ {
+                                      "id": 44,
+                                      "type": "STATEMENT",
+                                      "children": [ {
+                                          "id": 45,
+                                          "type": "ASSIGN",
+                                          "name": "=",
+                                          "children": [ {
+                                              "id": 46,
+                                              "type": "INDEX_EXP",
+                                              "children": [ {
+                                                  "id": 47,
+                                                  "type": "IDENT",
+                                                  "name": "J_history",
+                                                  "children": [],
+                                                  "annotations": []
+                                                }, {
+                                                  "id": 48,
+                                                  "type": "ARGUMENT_LIST",
+                                                  "children": [ {
+                                                      "id": 49,
+                                                      "type": "IDENT",
+                                                      "name": "iter",
+                                                      "children": [],
+                                                      "annotations": []
+                                                    }],
+                                                  "annotations": []
+                                                }],
+                                              "annotations": []
+                                            }, {
+                                              "id": 50,
+                                              "type": "INDEX_EXP",
+                                              "children": [ {
+                                                  "id": 51,
+                                                  "type": "IDENT",
+                                                  "name": "computeCost",
+                                                  "children": [],
+                                                  "annotations": []
+                                                }, {
+                                                  "id": 52,
+                                                  "type": "ARGUMENT_LIST",
+                                                  "children": [ {
+                                                      "id": 53,
+                                                      "type": "IDENT",
+                                                      "name": "X",
+                                                      "children": [],
+                                                      "annotations": []
+                                                    }, {
+                                                      "id": 54,
+                                                      "type": "IDENT",
+                                                      "name": "y",
+                                                      "children": [],
+                                                      "annotations": []
+                                                    }, {
+                                                      "id": 55,
+                                                      "type": "IDENT",
+                                                      "name": "theta",
+                                                      "children": [],
+                                                      "annotations": []
+                                                    }],
+                                                  "annotations": []
+                                                }],
+                                              "annotations": []
+                                            }],
+                                          "annotations": []
+                                        }],
+                                      "annotations": []
+                                    }],
+                                  "annotations": []
+                                }],
+                              "annotations": []
+                            }],
+                          "annotations": []
+                        }, {
+                          "id": 56,
+                          "type": "STATEMENT",
+                          "children": [ {
+                              "id": 57,
+                              "type": "NO_OP",
+                              "name": "endfunction",
+                              "children": [],
+                              "annotations": []
+                            }],
+                          "annotations": []
+                        }],
+                      "annotations": []
+                    }],
+                  "annotations": []
+                }],
+              "annotations": []
+            }],
+          "annotations": []
+        }, {
+          "id": 58,
+          "type": "STATEMENT",
+          "children": [ {
+              "id": 59,
+              "type": "NO_OP",
+              "name": "endscript",
+              "children": [],
+              "annotations": []
+            }],
+          "annotations": []
+        }],
+      "annotations": []
+    }],
+  "annotations": []
+}}
